@@ -159,7 +159,7 @@
      <div class="span5 offset1 video">
 <!--        <img class="img-polaroid" src="http://youtu.be/yGPUh1EAIGY"> -->
 
-<a href="http://goanimate.com/videos/0egbYB6ZrHMQ?utm_source=embed&uid=0mSfcEIrnCq4" target="_blank">SmarterKey</a> by <a href="http://goanimate.com/user/0mSfcEIrnCq4" target="_blank">SmarterKey</a> on <a href='http://goanimate.com?utm_source=embed' target="_blank">GoAnimate</a><br/><iframe scrolling="no" allowTransparency="true" frameborder="0" width="400" height="258" src="http://goanimate.com/player/embed/0egbYB6ZrHMQ"></iframe>
+<a href="http://goanimate.com/videos/0egbYB6ZrHMQ?utm_source=embed&uid=0mSfcEIrnCq4" target="_blank">SmarterKey</a> by <a href="http://goanimate.com/user/0mSfcEIrnCq4" target="_blank">SmarterKey</a> on <a href='http://goanimate.com?utm_source=embed' target="_blank">GoAnimate</a><br/><iframe scrolling="no" allowTransparency="true" frameborder="0" width="400" height="258" src="http://goanimate.com/player/embed/0egbYB6ZrHMQ" alt="Placeholder"></iframe>
 
 
 
@@ -168,8 +168,9 @@
 
      <!-- We define a new 'actions' div to contain statistics, order and share buttons. -->
      <div class="span5 actions">
+       <div class="row-fluid">
        <div class="span8 offset2">
-	 <div class="statistics">
+	 <div class="row-fluid statistics">
 	   <div class="span4">
 	     <!-- linediv-l and linediv-r give dividing lines that look different in horizontal and vartical layouts, illustrating media queries. -->
 	     <div class="linediv-l">
@@ -186,8 +187,9 @@
 	     <h3>20</h3> <p>days left</p>
 	     </div>
 	   </div>
-	 </div><!-- /.statistics -->
+	 </div><!-- /.row-fluid statistics -->
        </div><!-- /.span8 offset2 -->
+       <div class="row-fluid">
      <div class="span10 offset1">
        <!-- Bootstrap progress bar  -->
        <div class="thermometer progress active">
@@ -195,18 +197,23 @@
 	 <div class="bar bar-warning" style="width: 65%;"></div>
 	</div>
        </div><!-- /.span10 offset1 -->
+     </div><!-- /.row-fluid -->
+       <div class="row-fluid">
        <div class="span6 offset3 order">
 	 <!-- Standard buttons from Bootstrap -->
 	 <button class="btn btn-success btn-large">Preorder</button>
        </div>	 
+       </div><!-- ./row-fluid -->
+       <div class="row-fluid">
        <div class="span8 offset2 social">
        <!-- Social buttons are not included in default Bootstrap -->
        <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
        <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
-     </div>
-    </div><!-- /.span58 offset 2 -->
-   </div><!-- /.span5 actions> -->
-	   
+     </div><!-- /.span8 offset2 social -->
+     </div><!-- /.row-fluid -->
+     </div><!-- /.row-fluid -->
+     </div><!-- /.span5 actions> -->
+     </div><!-- /.row-fluid pitch -->
 
    <!-- Beyond this point the marketing copy begins -->
    <div class="row-fluid section1">
@@ -244,36 +251,37 @@
    <div class="row-fluid faq">
      <div class="span10 offset1">
        <h3>FAQ</h3>
-       <div class="accordian id="accordian2">
-       <div class="accordian-group">
-	 <a class="accordian-toggle" data-toggle="collapse" data-parent="#accordian2" href="#collapseOne">
+       <div class="accordion" id="accordion2">
+       <div class="accordion-group">
+	 <div class="accordion-heading">
+	 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
 	   What does FAQ stand for?
 	   </a>
 	 </div>
-       <div id="collapseOne" class="accordian-body collapse">
-	 <div class="accordian-inner">
+       <div id="collapseOne" class="accordion-body collapse">
+	 <div class="accordion-inner">
 	   fREQUENTLY aSKED qUESTIONS
 	 </div>
 	</div>
-       </div><!-- /.row-fluid -->
+       </div><!-- /.accordian-group -->
+       
 
-
-     <div class="accordian-group">
-       <div class="accordian-heading">
-	 <a class="accordian-toggle" data-toggle="collapse" data-parent="#accordian2" href="#collapseTwo">
+     <div class="accordion-group">
+       <div class="accordion-heading">
+	 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
 	   Whats a frequently asked question ?
 	 </a>
 	</div>
-       <div id="collapseTwo" class="accordian-body collapse">
-	 <div class="accordian-inner">
+       <div id="collapseTwo" class="accordion-body collapse">
+	 <div class="accordion-inner">
 	   A question which is commonly asked?
 	 </div>
        </div>
       </div><!-- /.accordian-group -->
-     </div>
-   </div>
+     </div><!-- /.accordian -->
+   </div><!-- /.span10 -->
 
-</div>
+</div><!-- /.row-fluid faq -->
 
 
 <!-- not crucial , but we put this under ta CC By-SA 3.0 license -->
